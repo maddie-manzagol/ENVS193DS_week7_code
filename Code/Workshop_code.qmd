@@ -95,7 +95,7 @@ plot predictions:
 plot_predictions<- ggplot(data= maples_data, aes(x = stem_length, y=stem_dry_mass))+
   geom_point()+
   geom_line(data= predictions, aes(x= x, y= predicted), color = "blue", linewidth = 1)+
-  geom_ribbon(data=predictions, aes(x=x, y= predicted, ymin= conf.low, ymax: conf.high), alpha = 0.2)
+  geom_ribbon(data=predictions, aes(x=x, y= predicted, ymin= conf.low, ymax= conf.high), alpha = 0.2)
 
 plot_predictions
 ```
